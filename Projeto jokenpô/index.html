@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jokenpo.css">
+    <title>Jogo Jokenpô</title>
+</head>
+<body>
+     <h1>JOKENPOÔ</h1>
+     <div class="principal">
+       
+        <h2>Jogador :</h2>
+        <img src="img/papel.png" alt="">
+        <img src="img/tesoura.png" alt="">
+        <img src="img/pedra.png" alt="">
+        <form action="#">
+            <input type="radio" id="papel" name="grupo"> papel
+            <input type="radio" id="tesoura" name="grupo"> tesoura
+            <input type="radio" id="pedra" name="grupo"> pedra <br>
+            <button onclick="jogar()" id="butao" value="jogar">Jogar</button>
+            <button type="reset" onclick="limpar()" value="limpar" id="limpar">Limpar</button>
+        </form>
+        
+
+        <form name="escolherPC">
+            <h2>PC jogou:</h2>
+            <img src="img/pc.png" alt="" id="pcJogou">
+        
+            <h3 id="resultado"></h3>
+            
+        </form>
+     </div>
+    
+
+
+
+    <script src="jokenpo.js" ></script>
+</body>
+</html>
